@@ -1,0 +1,27 @@
+{
+	"name": "42 Logo ? Don't Move !",
+	"description": "Make the 42 logo of the intra fixed",
+	"version": "1.0",
+	"manifest_version": 3,
+	"content_scripts": [ 
+		{ 
+			"matches": ["https://*.intra.42.fr/*"],
+			"js": ["foo.js"]
+		}
+	],
+	"permissions": ["activeTab", "scripting"],
+	"action": {
+		"default_icon": {
+			"16": "/images/extention_logo16.png",
+			"32": "/images/extention_logo32.png",
+			"48": "/images/extention_logo48.png",
+			"128": "/images/extention_logo128.png"
+		}
+	},
+	"icons": {
+		"16": "/images/extention_logo16.png",
+		"32": "/images/extention_logo32.png",
+		"48": "/images/extention_logo48.png",
+		"128": "/images/extention_logo128.png"
+	}
+}
